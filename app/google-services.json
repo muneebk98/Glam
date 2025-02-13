@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "187273708627",
+    "project_id": "glam-final",
+    "storage_bucket": "glam-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187273708627:android:a5e1a2161c8e4ab79ff2a6",
+        "android_client_info": {
+          "package_name": "com.example.glamfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxONDDAN1jbEP2Wmkr_dLo31KNOurwcIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

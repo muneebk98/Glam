@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Phone Number Display -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Services Details -->
+    <TextView
+        android:id="@+id/tvServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Services"/>
+
+    <!-- Date and Time Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"/>
+    </LinearLayout>
+
+    <!-- Total Price Display -->
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textAlignment="textEnd"/>
+
+    <!-- Receipt URL View -->
+    <TextView
+        android:id="@+id/tvReceiptUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:textColor="@android:color/holo_blue_bright"
+        android:clickable="true"
+        android:autoLink="web"/>
+
+    <!-- Status Display -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp"
+        android:paddingTop="8dp"/>
+
+    <!-- Complete and Cancel Buttons in a Horizontal LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btnComplete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_add"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_remove_cart_item"
+            android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>

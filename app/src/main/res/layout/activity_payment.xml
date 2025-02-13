@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Payment">
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash After Service" />
+
+        <RadioButton
+            android:id="@+id/radioOnlinePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Payment" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:src="@drawable/haircut"/>
+
+    <Button
+        android:id="@+id/btnUploadReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Receipt"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Total Price: $0.00"/>
+
+    <Button
+        android:id="@+id/btnBookMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book My Order"/>
+
+</LinearLayout>

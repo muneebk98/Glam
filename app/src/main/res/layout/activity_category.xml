@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF4FE"
+    tools:context=".Category">
+
+    <!-- Banner Container -->
+    <RelativeLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FDF4FE">
+
+        <TextView
+            android:id="@+id/tvBannerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUR ALL NEW Co Natural Brightening Facial"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvBannerText"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <!-- Images Container -->
+    <LinearLayout
+        android:id="@+id/imagesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bannerContainer"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- Hair Category -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHair"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hair_icon"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onHairClicked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blur_background"
+                    android:padding="8dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Makeup Category -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgMakeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hair_icon"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onMakeupClicked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makeup"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Facial Category -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgFacial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/haircut"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onFacialClicked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facial"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

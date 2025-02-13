@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Rating_screen"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/purple">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42.5dp"
+        android:layout_marginEnd="42.5dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1.0" />
+
+    <TextView
+        android:id="@+id/tvRatingDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etReview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvRatingDisplay"
+        android:hint="Write your review"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etReview"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
